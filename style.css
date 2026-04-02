@@ -1,148 +1,196 @@
 @import "reset.css";
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
 html {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
 }
 
 html::webkit-scrollbar {
-    display: none;
+	display: none;
 }
 
 body {
-    font-family: 'Work Sans', sans-serif;
-    background-color: #f8f8f8;
-    color: #060606;
+	font-family: "Work Sans", sans-serif;
+	background-color: #f8f8f8;
+	color: #060606;
 }
 
 .hero {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    padding: 2rem;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	padding: 2rem;
 }
 
 .hero-image {
-    position: absolute;
-    inset: 1.5rem;
-    z-index: -1;
+	position: absolute;
+	inset: 1.5rem;
+	z-index: -1;
 }
 
 .hero-overlay {
-    position: absolute;
-    background-image: linear-gradient(to bottom, #00000040, transparent);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 1.5rem;
+	position: absolute;
+	background-image: linear-gradient(to bottom, #00000040, transparent);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 1.5rem;
 }
 
 .hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1.5rem;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 1.5rem;
 }
 
 .hero-content {
-    display: flex;
-    height: 100%;
-    padding: 2rem;
+	display: flex;
+	height: 100%;
+	padding: 2rem;
 }
 
 .hero-content .left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 50%;
 }
 
 .hero-content .left .top {
-    margin-top: 5.5rem;
+	margin-top: 5.5rem;
 }
 
 .hero-title {
-    color: white;
-    font-family: "Archivo", sans-serif;
-    text-transform: uppercase;
-    font-size: 3.75rem;
-    font-weight: 500;
-    letter-spacing: -0.025rem;
-    line-height: 1;
+	color: white;
+	font-family: "Archivo", sans-serif;
+	text-transform: uppercase;
+	font-size: 3.75rem;
+	font-weight: 500;
+	letter-spacing: -0.025rem;
+	line-height: 1;
 }
 
 .hero-title span {
-    font-family: "Libre Baskerville", sans-serif;
-    text-transform: lowercase;
-    font-style: italic;
+	font-family: "Libre Baskerville", sans-serif;
+	text-transform: lowercase;
+	font-style: italic;
 }
 
 .hero-sub {
-    color: white;
-    margin-top: 1rem;
-    width: 30rem;
-    font-size: 1.5rem;
-    line-height: 1.25;
+	color: white;
+	margin-top: 1rem;
+	width: 30rem;
+	font-size: 1.5rem;
+	line-height: 1.25;
 }
 
 .hero-content .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end;
-    width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: end;
+	width: 50%;
 }
 
 .hero-content .right span {
-    font-family: "Sora", sans-serif;
-    color: white;
-    font-weight: 500;
-    font-size: 1.5rem;
-    background-color: #060606;
-    padding: 2rem 3rem;
-    border-radius: 0.75rem;
+	font-family: "Sora", sans-serif;
+	color: white;
+	font-weight: 500;
+	font-size: 1.5rem;
+	background-color: #060606;
+	padding: 2rem 3rem;
+	border-radius: 0.75rem;
 }
 
 .hero-content .left .bottom {
-    position: relative;
-    width: 384px;
-    height: 216px;
+	position: relative;
+	width: 384px;
+	height: 216px;
 }
 
 .hero-content .play-btn {
-    position: absolute;
-    inset: 0;
-    place-self: center;
-    width: 0;
-    height: 0;
-    border-top: 12px solid transparent;
-    border-bottom: 12px solid transparent;
-    border-left: 22px solid white;
-    transform: scale(1.5)
+	position: absolute;
+	inset: 0;
+	place-self: center;
+	width: 0;
+	height: 0;
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+	border-left: 22px solid white;
+	transform: scale(1.5);
 }
 
 .hero-content .bottom .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #00000030;
-    inset: 0;
-    border-radius: 1.5rem;
-    z-index: 2;
-    transition: all;
-    transition-duration: 300ms;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #00000030;
+	inset: 0;
+	border-radius: 1.5rem;
+	z-index: 2;
+	transition: all;
+	transition-duration: 300ms;
 }
 
 .hero-content .bottom .overlay:hover {
-    background-color: #00000010;
-    cursor: pointer;
+	background-color: #00000010;
+	cursor: pointer;
 }
 
 .hero-content video {
-    border-radius: 1.5rem;
+	border-radius: 1.5rem;
+}
+
+nav {
+	position: fixed;
+	inset: 3rem;
+	height: fit-content;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav .logo {
+	width: fit-content;
+	height: fit-content;
+	padding: 1rem;
+	background-color: #f8f8f890;
+	backdrop-filter: blur(40px);
+	-webkit-backdrop-filter: blur(40px);
+	border-radius: 0.5rem;
+}
+
+nav .logo img {
+	width: 100px;
+	height: 20px;
+}
+
+.navs {
+	width: fit-content;
+	height: fit-content;
+	background-color: #f8f8f890;
+	backdrop-filter: blur(40px);
+	-webkit-backdrop-filter: blur(40px);
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+}
+
+.navs ul {
+	display: flex;
+	flex-direction: row;
+	gap: 0.25rem;
+}
+
+.navs li {
+	font-size: 1.125rem;
+	letter-spacing: 0.025rem;
+	font-family: "Sora", sans-serif;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
 }
