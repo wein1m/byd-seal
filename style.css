@@ -14,7 +14,7 @@ html::webkit-scrollbar {
 }
 
 body {
-	font-family: "Work Sans", sans-serif;
+	font-family: "Sora", sans-serif;
 	background-color: #e8e5e2;
 	color: #060606;
 }
@@ -74,12 +74,6 @@ body {
 	font-weight: 500;
 	letter-spacing: -0.025rem;
 	line-height: 1;
-}
-
-.hero-title span {
-	font-family: "Libre Baskerville", sans-serif;
-	text-transform: lowercase;
-	font-style: italic;
 }
 
 .hero-sub {
@@ -225,3 +219,48 @@ nav .logo img {
 	padding: 0.5rem 1rem;
 	border-radius: 0.5rem;
 }
+
+.about {
+	width: 100vw;
+	height: 100vh;
+	padding: 2rem;
+	display: flex;
+}
+
+.about div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	flex: 0 0 100%;
+}
+
+.about h2 {
+	font-family: 'Sora', sans-serif;
+	font-size: 1rem;
+	color: #212325;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	margin-bottom: 2rem;
+}
+
+.about h2::before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: #212325;
+	border-radius: 999px;
+	margin-right: 1rem;
+}
+
+.about p {
+	max-width: 80rem;
+	font-family: 'Sora', sans-serif;
+	font-size: 3rem;
+	font-weight: 500;
+	line-height: 1.25;
+	color: #212325;;
+}
+
