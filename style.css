@@ -225,10 +225,6 @@ nav .logo img {
 	height: 100vh;
 	padding: 2rem;
 	display: flex;
-}
-
-.about div {
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
@@ -236,16 +232,16 @@ nav .logo img {
 	flex: 0 0 100%;
 }
 
-.about h2 {
+.section-title {
 	font-family: 'Sora', sans-serif;
 	font-size: 1rem;
 	color: #212325;
 	font-weight: 600;
 	letter-spacing: 0.1rem;
-	margin-bottom: 2rem;
+	margin: 2rem 0;
 }
 
-.about h2::before {
+.section-title::before {
 	content: "";
 	display: inline-block;
 	width: 10px;
@@ -253,6 +249,7 @@ nav .logo img {
 	background-color: #212325;
 	border-radius: 999px;
 	margin-right: 1rem;
+	margin-top: 2rem;
 }
 
 .about p {
@@ -264,3 +261,57 @@ nav .logo img {
 	color: #212325;;
 }
 
+.showcase {
+	padding: 3rem;
+	width: 100vw;
+	height: 100vh;
+}
+
+hr {
+	border-top: 1px solid #c0bebb;
+}
+
+.showcase .title {
+	margin: 4rem 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.showcase h2 {
+	font-family: 'Sora', sans-serif;
+	font-weight: 500;
+	font-size: 3rem;
+	max-width: 30rem;
+	line-height: 1.25;
+}
+
+.showcase p {
+	max-width: 50rem;
+	font-family: 'Sora', sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #212325;;
+}
+
+.bento-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 2.23fr;
+	gap: 1rem;
+}
+
+.bento-item {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 1.5rem;
+}
+
+.bento-item:nth-child(1) {
+	grid-column: 1/span 2;
+}
+
+.bento-item:nth-child(4) {
+	grid-column: 3;
+	grid-row: 1/span 2;
+	width: 100%;
+}
