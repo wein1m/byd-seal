@@ -31,9 +31,17 @@ window.addEventListener("scroll", () => {
   target = window.scrollY;
 });
 
+const nav = document.querySelector("nav");
+const navHeight = nav.scrollHeight;
+
 const animate = () => {
   current += (target - current) * ease;
   container.style.transform = `translateY(${-current}px)`;
+
+  current > navHeight
+    ? nav.classList.add("scrolled")
+    : nav.classList.remove("scrolled");
+
   requestAnimationFrame(animate);
 };
 
