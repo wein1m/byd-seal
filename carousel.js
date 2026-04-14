@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const item = document.querySelector(".carousel-item");
   const itemWidth = item.clientWidth;
 
+  let isDragging = false;
+  let lastX = 0;
+
   const validate = () => {
     const maxScroll = wrapper.scrollWidth - wrapper.clientWidth;
     const currScroll = wrapper.scrollLeft;
@@ -20,6 +23,31 @@ document.addEventListener("DOMContentLoaded", () => {
       nextBtn.style.opacity = "1";
     }
   };
+
+  wrapper.addEventListener("mouseup", () => {
+    isDragging = false;
+    wrapper.style.cursor = "grab";
+  });
+
+  wrapper.addEventListener("mouseleave", () => {
+    isDragging = false;
+    wrapper.style.cursor = "grab";
+  });
+
+  wrapper.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    lastX = e.pageX;
+    wrapper.style.cursor = "grabbing";
+  });
+
+  wrapper.addEventListener("mousemove", (e) => {
+    if (!isDragging) return;
+
+    const moveX = e.pageX - lastX;
+    lastX = e.pageX;
+
+    wrapper.scrollBy({ left: -moveX, behavior: "smooth" });
+  });
 
   prevBtn.addEventListener("click", () => {
     wrapper.scrollBy({ left: -itemWidth, behavior: "smooth" });

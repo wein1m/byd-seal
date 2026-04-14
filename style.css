@@ -388,6 +388,8 @@ nav.scrolled .navs {
     overflow-x: hidden;
     gap: 2rem;
     padding-bottom: 2rem;
+    cursor: grab;
+    user-select: none;
 
     scrollbar-width: thin;
     scrollbar-color: white transparent;
