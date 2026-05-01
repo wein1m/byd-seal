@@ -32,7 +32,7 @@ window.addEventListener("scroll", () => {
 });
 
 const nav = document.querySelector("nav");
-const navHeight = nav.scrollHeight;
+const navHeight = nav.scrollHeight + 100;
 
 const animate = () => {
   current += (target - current) * ease;
