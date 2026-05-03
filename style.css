@@ -715,6 +715,29 @@ nav.scrolled li {
     border-color: white;
 }
 
+@media (max-width: 480px) {
+    .vehicle-cta {
+        background-image: url("/public/vehicle-cta-bg_mobile.png");
+        height: 80vh;
+        padding: 0 2rem;
+    }
+
+    .vehicle-cta h2 {
+        font-size: 2.5rem;
+    }
+
+    .vehicle-cta p {
+        font-size: 0.875rem;
+        text-align: center;
+    }
+
+    .vehicle-cta .btn-wrapper {
+        font-size: 0.75rem;
+        width: fit-content;
+        padding: 0.5rem 1.75rem;
+    }
+}
+
 .subscribe {
     display: flex;
     flex-direction: row;
